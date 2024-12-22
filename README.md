@@ -50,32 +50,6 @@
 `ruby examples/parse_habr.rb`
 
 
-## Настройка парсера
-
-Для создания нового парсера:
-
-1. Создайте новый файл в директории `examples/`
-2. Наследуйте базовый класс или используйте готовые парсеры как пример
-3. Настройте селекторы под нужный сайт
-
-Пример:
-
-ruby
-
-require_relative '../lib/parsers/news_parser'
-
-class CustomParser
-
-def initialize
-
-@parser = NewsParser.new
-
-setup_capybara
-
-end
-end
-
-
 ## Этичный парсинг
 
 - Проверяйте robots.txt
